@@ -71,7 +71,7 @@ https://www.tooplate.com/view/2126-antique-cafe
                     <div class="inline-block">
                         <a href="#menu"
                             class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
-                            <i class="fas fa-coffee mr-3"></i>
+                            <i class="fas fa-heart mr-3"></i>
                             <span>Let's explore...</span>
                         </a>
                     </div>
@@ -282,6 +282,7 @@ https://www.tooplate.com/view/2126-antique-cafe
                 <div class="sm:pb-60 sm:pt-48 py-20">
                     <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
                         <h1 class="text-white text-5xl tm-logo-font mb-5">Media Interviews</h1>
+
                         <a href="https://ps.hket.com/article/2855438/%E3%80%90%E5%9C%B0%E5%8D%80%E2%80%A7%E4%BA%BA%E2%80%A7%E6%83%85%E3%80%9190%E5%BE%8C%E5%A5%B3%E7%94%9F%E7%A7%9F%E8%BF%B7%E4%BD%A0%E5%B7%A5%E4%BD%9C%E5%9D%8A%205%E4%BD%8D%E6%95%B8%E5%89%B5%E6%A5%AD%E9%96%8B%E6%8E%A1%E8%80%B3%E5%BA%97%E8%88%96"
                             target='_blank'
                             class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition ">
@@ -302,8 +303,25 @@ https://www.tooplate.com/view/2126-antique-cafe
             </div>
             <script src="js/jquery-3.6.0.min.js"></script>
             <script src="js/parallax.min.js"></script>
+
+
+            <!-- MiniPreview stuff here -->
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+            <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css"
+                rel="stylesheet">
             <script src="js/jquery.singlePageNav.min.js"></script>
-            <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
+            <link href="./jquery.minipreview.css" rel="stylesheet">
+            <script src="./jquery.minipreview.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $('#media a').miniPreview({ prefetch: 'pageload' });
+                    $('#media a').miniPreview({ prefetch: 'parenthover' });
+                    $('#media a').miniPreview({ prefetch: 'none' });
+                });
+            </script>
+            <script
+                src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script>
             <script>
 
                 function checkAndShowHideMenu() {

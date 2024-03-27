@@ -20,6 +20,11 @@ p a:hover {
 	color: #9FF;
 }
 
+a:hover {
+	text-decoration: none;
+	color: #fe86d4;
+}
+
 #about p a { color: #066; }
 #about p a:hover { color: #F36; }
 
